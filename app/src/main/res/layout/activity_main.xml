@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:text="Balvir Furniture House" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/title"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:text="Description" />
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/description"
+        android:text="Address"/>
+    <TextView
+        android:id="@+id/contact"
+        android:layout_below="@id/address"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:text="Contact"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_below="@id/contact"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:text="Email"/>
+    <TextView
+        android:id="@+id/details"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textAlignment="inherit"
+        android:layout_below="@id/image"
+        android:layout_toRightOf="@id/description"
+        android:text="Balvir Furniture House provides exclusive furniture designs to dynamically create your home bedroom,living room look elegant. Visit our store or shop online"/>
+    <TextView
+        android:id="@+id/fulladdress"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details"
+        android:layout_toRightOf="@id/address"
+        android:text="Ward no.13, Laroi Road, Shakti Nagar, Bhogpur"/>
+
+    <TextView
+        android:id="@+id/mobile"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/contact"
+        android:textStyle="italic"
+        android:layout_below="@id/fulladdress"
+        android:text="9646461046"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_below="@id/mobile"
+        android:layout_toRightOf="@id/email"
+        android:text="kaur94sandeep@gmail.com"
+        />
+</RelativeLayout>
